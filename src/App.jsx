@@ -5,22 +5,26 @@ import "./style.scss";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import { useContext } from "react";
 import { AuthContext } from "./context/AuthContext";
+import Chat from "./components/Chat";
+import ChatMobile from "./components/ChatMobileWraper";
+import SidebarMobile from "./components/SidebarMobile";
+import SideBarBack from "./components/SideBarBack";
 
 function App() {
   const { currentUser } = useContext(AuthContext);
 
   const ProtectedRoute = ({ children }) => {
     if (!currentUser) {
-      return <Navigate to="/login" />;
+      return <Navigate to='/login' />;
     }
 
-    return children
+    return children;
   };
 
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/">
+        <Route path='/'>
           <Route
             index
             element={
@@ -29,8 +33,10 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path="login" element={<Login />} />
-          <Route path="register" element={<Register />} />
+          <Route path='/chats' element={<SideBarBack />} />
+          <Route path='/chatScreen' element={<ChatMobile />} />
+          <Route path='login' element={<Login />} />
+          <Route path='register' element={<Register />} />
         </Route>
       </Routes>
     </BrowserRouter>

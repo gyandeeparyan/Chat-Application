@@ -161,6 +161,7 @@
             border-radius: 25px;
             cursor: pointer;
             @include tablet {
+              
               position: absolute;
               bottom: 10px;
             }
@@ -223,6 +224,7 @@
       .chatInfo {
         height: 50px;
         background-color: #5d5b8d;
+        
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -241,7 +243,8 @@
       }
 
       .messages {
-      
+        background-color:rgb(247, 243, 243);
+        opacity: 0.5;
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
