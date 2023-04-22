@@ -33,9 +33,14 @@ function App() {
               </ProtectedRoute>
             }
           />
-          <Route path='/chats' element={<SideBarBack />} />
-          <Route path='/chatScreen' element={<ChatMobile />} />
+
           <Route path='login' element={<Login />} />
+          <Route path='/chats' element={ <div className='home'>
+        <div className='container'>
+          <SidebarMobile />
+        </div>
+      </div>} />
+          <Route path='/chatScreen' element={<ChatMobile />} />
           <Route path='register' element={<Register />} />
         </Route>
       </Routes>

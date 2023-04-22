@@ -32,7 +32,7 @@
     background-color: white;
     padding: 20px 60px;
     border-radius: 20px;
-    border: #2f2d52 4px Solid;
+    border: #2f2d52 3px Solid;
     display: flex;
     flex-direction: column;
     gap: 10px;
@@ -108,8 +108,8 @@
   justify-content: center;
 
   .container {
-    
-    border: 1px solid white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+   
     border-radius: 35px;
     width: 65%;
     height: 80%;
@@ -121,13 +121,13 @@
 
     .sidebar {
       flex: 1;
-      background-color: #3e3c61;
+      
       position: relative;
 
       .navbar {
         display: flex;
         align-items: center;
-        background-color: #2f2d52;
+        background-color: #282563f3;
         height: 50px;
         padding: 10px;
         justify-content: space-between;
@@ -139,10 +139,11 @@
             display: none;
           }
         }
-
+        
         .user {
+          font-weight:bolder;
           display: flex;
-          gap: 10px;
+          justify-content:space-evenly;
 
           img {
             background-color: #ddddf7;
@@ -152,6 +153,8 @@
             object-fit: cover;
           }
 
+        
+          }
           button {
             background-color: #5d5b8d;
             color: #ddddf7;
@@ -163,9 +166,9 @@
             @include tablet {
               
               position: absolute;
-              bottom: 10px;
-            }
-          }
+              top:20px;
+              right: 20px;
+            }  
         }
       }
       .search {
@@ -208,12 +211,14 @@
 
         .userChatInfo {
           span {
+
+            color: #000000;
             font-size: 18px;
-            font-weight: 500;
+            font-weight:bolder;
           }
           p {
             font-size: 14px;
-            color: lightgray;
+            color: rgb(14, 13, 13);
           }
         }
       }
@@ -222,6 +227,7 @@
       flex: 2;
 
       .chatInfo {
+        font-weight:bolder;
         height: 50px;
         background-color: #5d5b8d;
         
@@ -243,11 +249,14 @@
       }
 
       .messages {
-        background-color:rgb(247, 243, 243);
-        opacity: 0.5;
+       
+        
+       
+        
         padding: 10px;
         height: calc(100% - 160px);
         overflow: scroll;
+        
 
         .message {
           display: flex;
@@ -288,12 +297,14 @@
           }
 
           &.owner {
+          
             flex-direction: row-reverse;
+            
 
             .messageContent {
               align-items: flex-end;
               p {
-                background-color: #8da4f1;
+                background-color: #512794d5;
                 color: white;
                 border-radius: 20px 0px 20px 20px;
               }
@@ -304,21 +315,25 @@
 
       .input {
         height: 50px;
-        background-color: white;
+        
+        border-radius: 20px;
+        background-color: rgb(255, 255, 255);
         padding: 10px;
         display: flex;
         align-items: center;
         justify-content: space-between;
 
         input {
+          border: #12112e 1px solid;
+          border-radius: 15px;
           width: 100%;
-          border: none;
+         
           outline: none;
-          color: #2f2d52;
+          color:#2f2d52;
           font-size: 18px;
 
           &::placeholder {
-            color: lightgray;
+            color: rgb(146, 141, 141);
           }
         }
 
@@ -336,7 +351,7 @@
             border: none;
             padding: 10px 15px;
             color: white;
-            background-color: #8da4f1;
+            background-color: #0f2670ce;
             cursor: pointer;
             padding: 5px 15px;
             border-radius: 25px;

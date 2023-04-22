@@ -13,9 +13,6 @@ const ChatMobile = () => {
     navigate("/login");
   };
 
-  const handleChats = () => {
-    navigate("/chats");
-  };
   return (
     <>
        <div className='chat'>
