@@ -5,6 +5,7 @@ import { ChatContext } from "../context/ChatContext";
 import CancelIcon from "@mui/icons-material/Cancel";
 import { useNavigate } from "react-router-dom";
 import ArrowCircleLeftIcon from "@mui/icons-material/ArrowCircleLeft";
+import { red } from "@mui/material/colors";
 const Chat = () => {
   const { data } = useContext(ChatContext);
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ const Chat = () => {
             <ArrowCircleLeftIcon />
           </div>
           <div onClick={handleClose}>
-            <CancelIcon />
+            <CancelIcon  />
           </div>
         </div>
       </div>
