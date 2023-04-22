@@ -157,6 +157,7 @@
           }
           button {
             background-color: #5d5b8d;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             color: #ddddf7;
             font-size: 10px;
             border: none;
@@ -178,9 +179,10 @@
           padding: 10px;
 
           input {
+            font-weight: 500;
             background-color: transparent;
             border: none;
-            color: white;
+            color: rgb(8, 1, 1);
             outline: none;
 
             &::placeholder {
@@ -229,7 +231,7 @@
       .chatInfo {
         font-weight:bolder;
         height: 50px;
-        background-color: #5d5b8d;
+        background-color: #282563f3;
         
         display: flex;
         align-items: center;
@@ -324,11 +326,11 @@
         justify-content: space-between;
 
         input {
-          border: #12112e 1px solid;
+          border: 0;
           border-radius: 15px;
           width: 100%;
-         
-          outline: none;
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          
           color:#2f2d52;
           font-size: 18px;
 
@@ -348,6 +350,7 @@
           }
 
           button {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             border: none;
             padding: 10px 15px;
             color: white;
