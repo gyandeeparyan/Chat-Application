@@ -3,7 +3,7 @@ import { signOut } from "firebase/auth";
 import { auth } from "../firebase";
 import { AuthContext } from "../context/AuthContext";
 import { useNavigate } from "react-router-dom";
-
+import TelegramIcon from '@mui/icons-material/Telegram';
 const Navbar = () => {
   const navigate = useNavigate();
   const { currentUser } = useContext(AuthContext);
@@ -13,7 +13,7 @@ const Navbar = () => {
   };
   return (
     <div className='navbar'>
-      <span className='logo'>Telegram</span>
+      <TelegramIcon/>
       <div className='user'>
         <img src={currentUser.photoURL} alt='' />
         &nbsp; &nbsp;&nbsp;&nbsp;

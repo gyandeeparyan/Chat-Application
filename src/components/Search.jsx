@@ -1,4 +1,5 @@
 import React, { useContext, useState } from "react";
+import SearchIcon from "@mui/icons-material/Search";
 import {
   collection,
   query,
@@ -86,7 +87,11 @@ const Search = () => {
           onChange={(e) => setUsername(e.target.value)}
           value={username}
         />
+        <div onClick={handleSearch} className='searchIcon'>
+          <SearchIcon />
+        </div>
       </div>
+
       {err && <span>User not found!</span>}
       {user && (
         <div className='userChat' onClick={handleSelect}>
