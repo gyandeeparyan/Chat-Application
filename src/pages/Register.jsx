@@ -5,6 +5,7 @@ import { auth, db, storage } from "../firebase";
 import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
+import { LinearProgress } from "@mui/material";
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -74,7 +75,7 @@ const Register = () => {
             <span>Add an avatar</span>
           </label>
           <button disabled={loading}>Sign up</button>
-          {loading && "Uploading and compressing the image please wait..."}
+          {loading && <LinearProgress color='success' />}
           {err && <span>Something went wrong</span>}
         </form>
         <p>
