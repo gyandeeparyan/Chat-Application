@@ -1,6 +1,7 @@
 import React, { useContext, useState } from "react";
 import Img from "../img/img.png";
-import Attach from "../img/attach.png";
+import AttachFileIcon from "@mui/icons-material/AttachFile";
+import AddPhotoAlternateIcon from "@mui/icons-material/AddPhotoAlternate";
 import { AuthContext } from "../context/AuthContext";
 import { ChatContext } from "../context/ChatContext";
 import {
@@ -74,23 +75,23 @@ const Input = () => {
     setImg(null);
   };
   return (
-    <div className="input">
+    <div className='input'>
       <input
-        type="text"
-        placeholder="Type something..."
+        type='text'
+        placeholder='Type something...'
         onChange={(e) => setText(e.target.value)}
         value={text}
       />
-      <div className="send">
-        <img src={Attach} alt="" />
+      <div className='send'>
+        <AttachFileIcon />
         <input
-          type="file"
+          type='file'
           style={{ display: "none" }}
-          id="file"
+          id='file'
           onChange={(e) => setImg(e.target.files[0])}
         />
-        <label htmlFor="file">
-          <img src={Img} alt="" />
+        <label htmlFor='file'>
+          <AddPhotoAlternateIcon />
         </label>
         <button onClick={handleSend}>Send</button>
       </div>
