@@ -29,7 +29,6 @@
 
   .formWrapper {
     
-    background-color: white;
     padding: 20px 60px;
     border-radius: 20px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
@@ -131,7 +130,7 @@
         background-color: #282563f3;
         height: 50px;
         padding: 10px;
-        justify-content: space-between;
+        justify-content:space-around;
         color: #ffffff;
 
         .logo {
@@ -168,9 +167,7 @@
             cursor: pointer;
             @include tablet {
               
-              position: absolute;
-              top:20px;
-              right: 20px;
+              
             }  
         }
       }
@@ -183,7 +180,7 @@
 
         .searchForm {
           padding: 10px;
-
+          
           input {
             font-weight: 500;
             background-color: transparent;
@@ -250,7 +247,7 @@
         
         display: flex;
         align-items: center;
-        justify-content: space-between;
+        justify-content:space-around;
         padding: 10px;
         color: rgb(250, 237, 122);
       }
@@ -360,11 +357,12 @@
           border: 0;
           border-radius: 15px;
           width: 100%;
-         
+          
           box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
           height: 60%;
           color:#2f2d52;
-          font-size: 18px;
+          font-size: 12px;
+          text-align: center;
 
           &::placeholder {
             color: rgb(146, 141, 141);
@@ -385,8 +383,9 @@
             box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             border: none;
             padding: 10px 15px;
-            color: white;
-            background-color: #5B63B7;
+            color: black;
+            font-weight: 800;
+            background-color: rgb(250, 237, 122);
             cursor: pointer;
             padding: 5px 15px;
             border-radius: 25px;
