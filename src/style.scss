@@ -192,11 +192,12 @@
             font-weight: 500;
             background-color: transparent;
             border: none;
-            color: rgb(8, 1, 1);
+            color: rgb(255, 255, 255);
             outline: none;
 
             &::placeholder {
-              color: rgb(182, 165, 165);
+              
+              color: rgb(212, 200, 200);
             }
           }
         }
@@ -205,6 +206,8 @@
       .searchIcon{
         position: absolute;
         top:100px;
+        font-weight: 800;
+        color: #ddddf7;
         right:40px;
       }
 
@@ -239,7 +242,7 @@
             margin-top: 0;
             font-weight: 600;
             font-size: 14px;
-            color: rgb(190, 180, 180);
+            color: rgb(224, 209, 209);
           }
         }
       }
