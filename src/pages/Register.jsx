@@ -6,6 +6,7 @@ import { ref, uploadBytesResumable, getDownloadURL } from "firebase/storage";
 import { doc, setDoc } from "firebase/firestore";
 import { useNavigate, Link } from "react-router-dom";
 import { LinearProgress } from "@mui/material";
+import TelegramIcon from '@mui/icons-material/Telegram';
 
 const Register = () => {
   const [err, setErr] = useState(false);
@@ -63,7 +64,7 @@ const Register = () => {
   return (
     <div className='formContainer'>
       <div className='formWrapper'>
-        <span className='logo'> Telegram</span>
+        <span className='logo'> <TelegramIcon/></span>
         <span className='title'>Register</span>
         <form onSubmit={handleSubmit}>
           <input required type='text' placeholder='User Name' />
