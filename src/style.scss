@@ -22,7 +22,7 @@
 .formContainer {
   
   background: rgb(101,78,163);
-  background: linear-gradient(90deg, rgba(101,78,163,1) 23%, rgba(234,175,200,1) 77%);
+  background: linear-gradient(189deg, rgba(101,78,163,1) 23%, rgba(234,175,200,1) 77%);
   height: 100vh;
   display: flex;
   align-items: center;
@@ -86,22 +86,31 @@
         display: flex;
         align-items: center;
         gap: 10px;
-        color: #8da4f1;
+        color: #fcfdff;
         font-size: 12px;
         cursor: pointer;
-
+        font-weight: bold;
         img {
           width: 32px;
         }
       }
     }
     p {
+      font-weight: bold;
       color: #fdfdff;
       font-size: 12px;
       margin-top: 10px;
     }
-    a{
-      color:rgb(255, 255, 255);
+    a{      text-decoration: none;
+            background-color: rgb(250, 237, 122);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            color: #000000;
+            font-size: 10px;
+            font-weight:bolder;
+            border: none;
+            padding: 5px 15px;
+            border-radius: 25px;
+            cursor: pointer;
     }
   }
 }
